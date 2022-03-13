@@ -49,13 +49,6 @@ namespace MvcMovie.Controllers
             return View(movieGenreVM);
         }
 
-        /*[HttpPost]
-        public string Index(string searchString, bool notUsed)
-        {
-            return "From [HttpPost]Index: filter on " + searchString;
-        }*/
-
-        // GET: Movies/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
